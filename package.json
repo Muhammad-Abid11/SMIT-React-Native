@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "expo": "~50.0.13",
+    "expo-camera": "~14.1.1",
     "expo-status-bar": "~1.11.1",
     "native-base": "^3.4.28",
     "react": "18.2.0",
     "react-native": "0.73.5",
     "react-native-safe-area-context": "^3.3.2",
-    "react-native-svg": "^12.1.1"
+    "react-native-svg": "^12.1.1",
+    "react-native-webview": "^13.8.2",
+    "expo-media-library": "~15.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

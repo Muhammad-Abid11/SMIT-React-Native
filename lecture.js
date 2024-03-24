@@ -84,5 +84,52 @@ src/components
 camera install from expo
 
 
+Assignment 1 --> Image like Todo App in which user pick/capture multiple
+                 images and arrange them like a posts
+                 
+                 Create Image Gallery (Todo features with Images)
+*/
+
+
+/* 
+=======Class 4
+
+for routing we use--> navigation , screens , stacknavigator
+3 types of Navigtion
+    stack navigator
+    tab navigaor    (npm reac/top-tabs)
+
+
+programming routing(jb ap conditionally 1 page sy dusry page per jayen)
+
+
+stack--> it means LIFO (last in first out ) structure follow
 
 */
+
+/* 
+=======Calsss 5
+npm install @react-navigation/drawer
+npm install react-native-gesture-handler react-native-reanimated
+
+//apne main file me ye import kro
+mport it from @react-navigation/drawer:
+
+
+
+drawer sb stack k parent hoga 
+or usme multiple stacks use krengy
+
+
+
+expo map for "map"
+
+
+"useEffect" k async kam knre us k under krne mana krta too ap alag async function ko us k under call  krty hen
+
+useEffect(()=>{ //ya ap useEffect k under hi anonymous function bana liye
+ (async()=>{
+
+ }) ();  
+})
+ */
