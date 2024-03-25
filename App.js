@@ -6,6 +6,7 @@ import Class1Library from './src/views/Class1_library'
 import Class2 from './src/views/Class2';
 import Todo from './src/views/Class2_Todo';
 import Class3_ExpoCamera from './src/views/Class3_ExpoCamera';
+import MainNavigator from './src/config/navigation';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -14,7 +15,8 @@ export default function App() {
       {/* <Class1Library /> */}
       {/* <Class2 /> */}
       {/* <Todo /> */}
-      <Class3_ExpoCamera />
+      {/* <Class3_ExpoCamera /> */}
+      <MainNavigator />
     </View>
   );
 }
