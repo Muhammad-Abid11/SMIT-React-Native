@@ -1,16 +1,17 @@
 import { View, Text, Button } from 'react-native'
 
-function Dashboard({ navigation }) {
+function Pickup({ navigation }) {
 
     return <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+
         <Button
-            title='Take a Ride'
-            onPress={() => navigation.navigate("Pickup")}
+            title='Select Destination'
+            onPress={() => navigation.navigate("Destination")}
         />
     </View>
 }
 
-export default Dashboard
+export default Pickup
 
 /* 
 Navigation k every "child_Component" me
