@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';//for drawer navigation
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 

@@ -7,10 +7,18 @@
 
 // https://reactnavigation.org/docs/material-top-tab-navigator/
 // npm install @react-navigation/material-top-tabs react-native-tab-view
+//npm install react-native-pager-view
+
+// https://reactnavigation.org/docs/drawer-navigator
+// npm install @react-navigation/drawer
+// npx expo install react-native-gesture-handler react-native-reanimated
+
+// if you got any error from the library go to Documentation and check any npm package that was not missed 
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import Chats from '../screens/Chats'
 import Calls from '../screens/Calls'
@@ -21,21 +29,41 @@ import Pickup from '../screens/Pickup'
 import Destination from '../screens/Destination'
 import CarSelection from '../screens/CarSelection'
 
+import Profile from '../screens/Profile'
+import History from '../screens/History'
+
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialTopTabNavigator();
+const Drawer = createDrawerNavigator();
+
 
 export default function MainNavigator() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="TabNavi" component={MyTabs} />
-                {/* To see StackNavigation comment "TabNavi" line */}
-                <Stack.Screen name="Dashboard" component={Dashboard} />
-                <Stack.Screen name="Pickup" component={Pickup} />
-                <Stack.Screen name="Destination" component={Destination} />
-                <Stack.Screen name="CarSelection" component={CarSelection} />
-            </Stack.Navigator>
+            {/* <Drawer.Navigator initialRouteName="Feed" screenOptions={{ headerShown: false }}> */}
+            <Drawer.Navigator initialRouteName="Profile" >
+                <Drawer.Screen name="Feed" component={MyStack} options={{ drawerLabel: 'Home' }} />
+                <Drawer.Screen name="Profile" component={Profile} />
+                <Drawer.Screen name="History" component={History} />
+            </Drawer.Navigator>
         </NavigationContainer>
+
+    );
+}
+
+function MyStack() {
+    return (
+        // <NavigationContainer> //if you are not using "DrawerNavigator then uncomment it and export it"
+        <Stack.Navigator >
+
+            {/* <Stack.Screen name="TabNavi" component={MyTabs} /> */}{/* To see TabNavigation uncomment "TabNavi" line */}
+
+            <Stack.Screen name="Dashboard" component={Dashboard} />
+            <Stack.Screen name="Pickup" component={Pickup} />
+            <Stack.Screen name="Destination" component={Destination} />
+            <Stack.Screen name="CarSelection" component={CarSelection} />
+        </Stack.Navigator>
+        // </NavigationContainer >
     )
 }
 
