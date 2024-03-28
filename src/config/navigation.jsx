@@ -32,6 +32,8 @@ import CarSelection from '../screens/CarSelection'
 import Profile from '../screens/Profile'
 import History from '../screens/History'
 
+import ExpoMap from '../screens/ExpoMap';
+
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialTopTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -62,6 +64,9 @@ function MyStack() {
             <Stack.Screen name="Pickup" component={Pickup} />
             <Stack.Screen name="Destination" component={Destination} />
             <Stack.Screen name="CarSelection" component={CarSelection} />
+
+            <Stack.Screen name="ExpoMap" component={ExpoMap} />
+
         </Stack.Navigator>
         // </NavigationContainer >
     )

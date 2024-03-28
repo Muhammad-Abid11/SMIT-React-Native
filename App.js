@@ -18,7 +18,7 @@ export default function App() {
       {/* <Class2 /> */}
       {/* <Todo /> */}
       {/* <Class3_ExpoCamera /> */}
-      <MainNavigator />
+      <MainNavigator />{/* class4 */}
     </View>
   );
 }

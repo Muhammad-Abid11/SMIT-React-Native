@@ -7,11 +7,17 @@ function Destination({ navigation }) {
             title='Select a car'
             onPress={() => navigation.navigate("CarSelection")}
         />
-
+        <Text>{"\n"}</Text>
+        <Button
+            title="Open Map"
+            onPress={() => navigation.navigate("ExpoMap")}
+        />
+        <Text>{"\n"}</Text>
         <Button
             title="Go back"
             onPress={() => navigation.goBack()}
         />
+        <Text>{"\n"}</Text>
 
         <Button
             title="Go back to first screen in stack"
